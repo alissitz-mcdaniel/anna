@@ -81,11 +81,10 @@ Here is a basic plot using base graphics:
 plot(x)
 ```
 
-Note that unlike traditional Sweave, there is no need to write `fig=TRUE`.
 
 
 ### Multiple plots
-Also, unlike traditional Sweave, you can include multiple plots in one code chunk:
+You can include multiple plots in one code chunk:
 
     ```{r }
     boxplot(1:10~rep(1:2,5))
@@ -111,11 +110,10 @@ As do lattice plots:
 xyplot(y~x)
 ```
 
-Note that unlike traditional Sweave, there is no need to print lattice plots directly.
 
 ## R Code chunk features
 ### Create Markdown code from R
-The following code hides the command input (i.e., `echo=FALSE`), and outputs the content directly as code (i.e., `results=asis`, which is similar to `results=tex` in Sweave).
+The following code hides the command input (i.e., `echo=FALSE`), and outputs the content directly as code 
 
 
     ```{r , results='asis', echo=FALSE}
@@ -219,7 +217,6 @@ $$\frac{1}{1+\exp(-x)}$$
 knitr provides self-contained HTML code that calls a Mathjax script to display formulas.
 However, in order to include the script in my blog posts I [took the script](https://gist.github.com/2716053) and incorporated it into my blogger template.
 If you are viewing this post through syndication or an RSS reader, this may not work.
-You may need to view this post on my website. 
 
 ### Tables
 Tables can be included using the following notation
